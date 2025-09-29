@@ -1,8 +1,10 @@
 'use client';
 
-import { Title, Text, Container, Grid, SimpleGrid, Box, Button } from '@mantine/core';
+import { Title, Text, Container, Grid, SimpleGrid, Box, Button, Stack, Group, ActionIcon, ThemeIcon, Anchor } from '@mantine/core';
 import { Card } from '@/components/common/Card';
 import Link from 'next/link';
+import { TestimonialsSection } from '@/components/landing/TestimonialsSection';
+import { IconMail, IconPhone, IconMapPin, IconBrandFacebook, IconBrandLinkedin, IconBrandInstagram } from '@tabler/icons-react';
 
 // Placeholder for the main illustration
 function HeroIllustration() {
@@ -14,6 +16,69 @@ function HeroIllustration() {
         borderRadius: 'var(--mantine-radius-md)',
       }}
     />
+  );
+}
+
+function AboutSection() {
+  return (
+    <Box component="section" id="about" mt={{ base: 'xl', md: '5rem' }}>
+      <Container size="md">
+        <Stack gap="lg">
+          <Title order={2} ta="center">
+            A Nossa Missão: Capacitar Lisboa para um Futuro Digital e Inclusivo
+          </Title>
+          <Text ta="center" c="dimmed">
+            Em Lisboa, como em todo o país, o fosso digital é um desafio real que afeta a participação cívica e a igualdade de oportunidades. Foi para responder a esta realidade que a Câmara Municipal de Lisboa criou, em 2017, o Programa para a Inclusão e Literacia Digital (PILD). A nossa missão é clara: desmistificar a tecnologia e transformá-la numa ferramenta de empoderamento para todos. Acreditamos que a literacia digital é um direito fundamental na sociedade atual. Por isso, desenhámos percursos de aprendizagem como o Passaporte Competências Digitais, o Futuro Digital e o IA para Todos para serem acessíveis, práticos e, acima de tudo, centrados nas pessoas. Utilizamos metodologias inovadoras, como a gamificação e a certificação através de Open Badges, para criar uma experiência de aprendizagem motivadora e reconhecida. Mais do que ensinar a usar ferramentas, queremos inspirar a confiança, promover o pensamento crítico e construir uma comunidade onde ninguém fica para trás. Junte-se a nós nesta missão. Juntos, estamos a construir uma Lisboa mais conectada, mais justa e mais preparada para o amanhã.
+          </Text>
+        </Stack>
+      </Container>
+    </Box>
+  );
+}
+
+function ContactSection() {
+  return (
+    <Box component="section" id="contact" mt={{ base: 'xl', md: '5rem' }} py="xl" bg="var(--mantine-color-gray-1)">
+      <Container size="md">
+        <Stack align="center" gap="lg">
+          <Title order={2} ta="center">
+            Fale Connosco
+          </Title>
+          <Text ta="center" c="dimmed">
+            Tem alguma dúvida sobre os nossos programas? Uma sugestão para melhorarmos? Ou representa uma organização e gostaria de explorar uma parceria? Saiba como nos contactar.
+          </Text>
+          
+          <Stack mt="xl" gap="md">
+            <Group>
+              <ThemeIcon variant="light" size="lg"><IconMail /></ThemeIcon>
+              <Anchor href="mailto:formacaodigital@cm-lisboa.pt">
+                formacaodigital@cm-lisboa.pt
+              </Anchor>
+            </Group>
+            <Group>
+              <ThemeIcon variant="light" size="lg"><IconPhone /></ThemeIcon>
+              <Text>+351 21 817 40 50</Text>
+            </Group>
+            <Group>
+              <ThemeIcon variant="light" size="lg"><IconMapPin /></ThemeIcon>
+              <Text>Departamento de Desenvolvimento e Formação, Rua António Patrício, 26, 3º Andar, 1700-049 Lisboa</Text>
+            </Group>
+          </Stack>
+
+          <Group mt="xl">
+            <ActionIcon component="a" href="#" variant="default" size="lg">
+              <IconBrandFacebook />
+            </ActionIcon>
+            <ActionIcon component="a" href="#" variant="default" size="lg">
+              <IconBrandLinkedin />
+            </ActionIcon>
+            <ActionIcon component="a" href="#" variant="default" size="lg">
+              <IconBrandInstagram />
+            </ActionIcon>
+          </Group>
+        </Stack>
+      </Container>
+    </Box>
   );
 }
 
@@ -93,7 +158,11 @@ export default function HomePage() {
         </Card>
       </SimpleGrid>
 
-      {/* Other sections will go here */}
+      <AboutSection />
+
+      <TestimonialsSection />
+
+      <ContactSection />
     </Container>
   );
 }

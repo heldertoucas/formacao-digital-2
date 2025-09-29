@@ -1,3 +1,15 @@
 componentes e estilo web:
 https://ui.mantine.dev/category/hero/
 https://mantinehub.com/blocks
+
+icones:
+https://icons.getbootstrap.com/
+https://www.streamlinehq.com/
+https://feathericons.com/
+
+ilustrações:
+https://illustrationkit.com/illustrations/yippy
+https://flowbite.com/illustrations/
+https://www.toools.design/free-open-source-illustrations
+https://www.charco.design/grads-v2
+https://storyset.com/

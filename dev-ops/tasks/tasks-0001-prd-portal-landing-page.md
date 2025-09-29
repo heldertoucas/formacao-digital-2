@@ -15,21 +15,21 @@
 
 ## Tasks
 
--   [ ] 1.0 Create Foundational Layout & Navigation Components
+-   [x] 1.0 Create Foundational Layout & Navigation Components
     -   [x] 1.1 Create the `SiteHeader.tsx` component in `src/components/layout/`. It should include the site logo/title and navigation links ("About", "Contact") using Mantine's `AppShell`, `Group`, and `Anchor` components.
     -   [x] 1.2 Create the `SiteFooter.tsx` component in `src/components/layout/`. It should display the contact information and social media links from the PRD.
     -   [x] 1.3 Create a generic and reusable `Card.tsx` component in `src/components/common/` using `Mantine.Card`. It should be flexible enough to be used for both program and testimonial cards.
     -   [x] 1.4 Modify the root layout at `src/app/layout.tsx` to integrate the new `SiteHeader` and `SiteFooter`, making them persistent across the entire site.
--   [ ] 2.0 Implement the Main Hero Section
-    -   [ ] 2.1 In `src/app/page.tsx`, build the structure for the Hero Section.
-    -   [ ] 2.2 Add the main headline and sub-headline using appropriately sized Mantine `Title` and `Text` components.
-    -   [ ] 2.3 Use a Mantine `SimpleGrid` or `Grid` to create the three-column layout for the program cards.
-    -   [ ] 2.4 For each of the three programs, use the new `Card` component and populate it with the title, text, "Ideal for," and button content specified in the PRD.
-    -   [ ] 2.5 Ensure the buttons in the program cards use Next.js's `<Link>` component for client-side navigation to `/passaporte`, `/futuro`, and `/ia`.
+-   [x] 2.0 Implement the Main Hero Section
+    -   [x] 2.1 In `src/app/page.tsx`, build the structure for the Hero Section.
+    -   [x] 2.2 Add the main headline and sub-headline using appropriately sized Mantine `Title` and `Text` components.
+    -   [x] 2.3 Use a Mantine `SimpleGrid` or `Grid` to create the three-column layout for the program cards.
+    -   [x] 2.4 For each of the three programs, use the new `Card` component and populate it with the title, text, "Ideal for," and button content specified in the PRD.
+    -   [x] 2.5 Ensure the buttons in the program cards use Next.js's `<Link>` component for client-side navigation to `/passaporte`, `/futuro`, and `/ia`.
 -   [ ] 3.0 Build Static Content Sections (About, Testimonials, Contact)
-    -   [ ] 3.1 Build the "About" section with the `<section id="about">` tag, using Mantine components to style the title and text content from the PRD.
-    -   [ ] 3.2 Build the "Testimonials" section with the `<section id="testimonials">` tag.
-    -   [ ] 3.3 Use a `Grid` or `SimpleGrid` to lay out the three testimonials, rendering each one inside the reusable `Card` component.
+    -   [x] 3.1 Build the "About" section with the `<section id="about">` tag, using Mantine components to style the title and text content from the PRD.
+    -   [x] 3.2 Build the "Testimonials" section with the `<section id="testimonials">` tag.
+    -   [x] 3.3 Use a `Grid` or `SimpleGrid` to lay out the three testimonials, rendering each one inside the reusable `Card` component.
     -   [ ] 3.4 Build the "Contact" section with the `<section id="contact">` tag.
     -   [ ] 3.5 Display the contact details (Email, Phone, Address) and add placeholder icons for the social media links using Mantine `Group`, `Text`, and `ActionIcon` components.
 -   [ ] 4.0 Implement Page Interactivity and Routing
