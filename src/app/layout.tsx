@@ -1,8 +1,10 @@
-import { MantineProvider } from '@mantine/core';
-import '@mantine/core/styles.css';
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Providers } from "./providers";
 import "./globals.css";
+import { AppShell } from "@mantine/core";
+import { SiteHeader } from "@/components/layout/SiteHeader";
+import { SiteFooter } from "@/components/layout/SiteFooter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +31,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <MantineProvider>{children}</MantineProvider>
+        <Providers>
+          <AppShell header={{ height: 60 }} footer={{ height: 120 }} padding="md">
+            <SiteHeader />
+            <AppShell.Main>{children}</AppShell.Main>
+            <SiteFooter />
+          </AppShell>
+        </Providers>
       </body>
     </html>
   );
