@@ -19,7 +19,7 @@
     -   [x] 1.1 Create the `SiteHeader.tsx` component in `src/components/layout/`. It should include the site logo/title and navigation links ("About", "Contact") using Mantine's `AppShell`, `Group`, and `Anchor` components.
     -   [x] 1.2 Create the `SiteFooter.tsx` component in `src/components/layout/`. It should display the contact information and social media links from the PRD.
     -   [x] 1.3 Create a generic and reusable `Card.tsx` component in `src/components/common/` using `Mantine.Card`. It should be flexible enough to be used for both program and testimonial cards.
-    -   [ ] 1.4 Modify the root layout at `src/app/layout.tsx` to integrate the new `SiteHeader` and `SiteFooter`, making them persistent across the entire site.
+    -   [x] 1.4 Modify the root layout at `src/app/layout.tsx` to integrate the new `SiteHeader` and `SiteFooter`, making them persistent across the entire site.
 -   [ ] 2.0 Implement the Main Hero Section
     -   [ ] 2.1 In `src/app/page.tsx`, build the structure for the Hero Section.
     -   [ ] 2.2 Add the main headline and sub-headline using appropriately sized Mantine `Title` and `Text` components.

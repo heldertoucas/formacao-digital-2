@@ -1,0 +1,3 @@
+componentes e estilo web:
+https://ui.mantine.dev/category/hero/
+https://mantinehub.com/blocks
