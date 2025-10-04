@@ -238,3 +238,14 @@ import { AppShell, AppShellMain } from '@mantine/core';
 ```
 
 *For more context, see session file: `dev-ops/logs/29-09-2025-0002-landing-page-build-1.md`*
+---
+### Browser Tooling Recovery Protocol
+*Insight discovered on 2025-10-04.*
+
+The internal browser automation tooling can enter an unrecoverable state if its underlying processes become stale or are manually terminated.
+
+An initial error of `The browser is already running` indicates a stale process. While attempting to `kill` these processes seems logical, it results in a persistent `Not connected` error for the remainder of the session.
+
+**Resolution:** The only confirmed method to recover from this state is to **restart the entire Cloud Shell session**. Do not attempt to manually kill the browser processes, as this will prevent any further browser-based tasks until a restart.
+
+*For more context, see session file: `dev-ops/logs/04-10-2025-0001-git-fix-and-browser-tool-failure.md`*

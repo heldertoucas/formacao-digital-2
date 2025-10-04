@@ -34,8 +34,8 @@
     -   [x] 3.5 Display the contact details (Email, Phone, Address) and add placeholder icons for the social media links using Mantine `Group`, `Text`, and `ActionIcon` components.
 -   [ ] 4.0 Implement Page Interactivity and Routing
     -   [x] 4.1 Use the `useWindowScroll` hook from `@mantine/hooks` to implement smooth-scrolling functionality for the "About" and "Contact" links in the `SiteHeader`.
-    -   [ ] 4.2 Thoroughly test all links on the page to ensure they navigate to the correct routes or scroll to the correct sections.
-    -   [ ] 4.3 Create the `src/app/not-found.tsx` file and build a simple, professionally styled 404 page.
+    -   [x] 4.2 Thoroughly test all links on the page to ensure they navigate to the correct routes or scroll to the correct sections.
+    -   [x] 4.3 Create the `src/app/not-found.tsx` file and build a simple, professionally styled 404 page.
 -   [ ] 5.0 Finalize Styling, Responsiveness, and Accessibility
     -   [ ] 5.1 Review the entire landing page on desktop, tablet, and mobile screen sizes to ensure the layout is fully responsive and visually polished.
     -   [ ] 5.2 Check that all interactive elements are keyboard-accessible and have appropriate `aria-label`s.
