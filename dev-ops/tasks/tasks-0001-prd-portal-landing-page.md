@@ -26,14 +26,14 @@
     -   [x] 2.3 Use a Mantine `SimpleGrid` or `Grid` to create the three-column layout for the program cards.
     -   [x] 2.4 For each of the three programs, use the new `Card` component and populate it with the title, text, "Ideal for," and button content specified in the PRD.
     -   [x] 2.5 Ensure the buttons in the program cards use Next.js's `<Link>` component for client-side navigation to `/passaporte`, `/futuro`, and `/ia`.
--   [ ] 3.0 Build Static Content Sections (About, Testimonials, Contact)
+-   [x] 3.0 Build Static Content Sections (About, Testimonials, Contact)
     -   [x] 3.1 Build the "About" section with the `<section id="about">` tag, using Mantine components to style the title and text content from the PRD.
     -   [x] 3.2 Build the "Testimonials" section with the `<section id="testimonials">` tag.
     -   [x] 3.3 Use a `Grid` or `SimpleGrid` to lay out the three testimonials, rendering each one inside the reusable `Card` component.
-    -   [ ] 3.4 Build the "Contact" section with the `<section id="contact">` tag.
-    -   [ ] 3.5 Display the contact details (Email, Phone, Address) and add placeholder icons for the social media links using Mantine `Group`, `Text`, and `ActionIcon` components.
+    -   [x] 3.4 Build the "Contact" section with the `<section id="contact">` tag.
+    -   [x] 3.5 Display the contact details (Email, Phone, Address) and add placeholder icons for the social media links using Mantine `Group`, `Text`, and `ActionIcon` components.
 -   [ ] 4.0 Implement Page Interactivity and Routing
-    -   [ ] 4.1 Use the `useWindowScroll` hook from `@mantine/hooks` to implement smooth-scrolling functionality for the "About" and "Contact" links in the `SiteHeader`.
+    -   [x] 4.1 Use the `useWindowScroll` hook from `@mantine/hooks` to implement smooth-scrolling functionality for the "About" and "Contact" links in the `SiteHeader`.
     -   [ ] 4.2 Thoroughly test all links on the page to ensure they navigate to the correct routes or scroll to the correct sections.
     -   [ ] 4.3 Create the `src/app/not-found.tsx` file and build a simple, professionally styled 404 page.
 -   [ ] 5.0 Finalize Styling, Responsiveness, and Accessibility

@@ -212,3 +212,29 @@ fi
 ```
 
 *For more context, see session file: `dev-ops/logs/29-09-2025-0001-setup-and-docs-migration.md`*
+---
+### Bundler Issues with Compound Components
+
+*Insight discovered on 2025-09-29.*
+
+When using modern bundlers like Turbopack, tree-shaking optimizations can sometimes fail to correctly resolve compound components (e.g., `Component.SubComponent`). This can lead to runtime errors like `Element type is invalid... got: undefined` because the sub-component is never correctly attached to the main component object.
+
+**Resolution:** If you encounter this, do not rely on the property access. Instead, use a direct named import for the sub-component if the library provides one.
+
+**Example (for Mantine's AppShell):**
+
+**Incorrect (may fail):**
+```typescript
+import { AppShell } from '@mantine/core';
+// ...
+<AppShell.Main>...</AppShell.Main>
+```
+
+**Correct (more robust):**
+```typescript
+import { AppShell, AppShellMain } from '@mantine/core';
+// ...
+<AppShellMain>...</AppShellMain>
+```
+
+*For more context, see session file: `dev-ops/logs/29-09-2025-0002-landing-page-build-1.md`*

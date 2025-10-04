@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Providers } from "./providers";
 import "./globals.css";
-import { AppShell } from "@mantine/core";
+import { AppShell, AppShellMain } from "@mantine/core";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 
@@ -34,7 +34,7 @@ export default function RootLayout({
         <Providers>
           <AppShell header={{ height: 60 }} footer={{ height: 120 }} padding="md">
             <SiteHeader />
-            <AppShell.Main>{children}</AppShell.Main>
+            <AppShellMain>{children}</AppShellMain>
             <SiteFooter />
           </AppShell>
         </Providers>
