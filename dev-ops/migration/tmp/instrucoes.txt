@@ -1,1 +1,1 @@
-pnpm run dev -p 8080invesi
+pnpm run dev -p 8080

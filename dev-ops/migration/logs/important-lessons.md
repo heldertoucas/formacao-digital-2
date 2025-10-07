@@ -249,3 +249,17 @@ An initial error of `The browser is already running` indicates a stale process. 
 **Resolution:** The only confirmed method to recover from this state is to **restart the entire Cloud Shell session**. Do not attempt to manually kill the browser processes, as this will prevent any further browser-based tasks until a restart.
 
 *For more context, see session file: `dev-ops/logs/04-10-2025-0001-git-fix-and-browser-tool-failure.md`*
+---
+### Environment Variable Conventions (Vite vs. Next.js)
+*Insight discovered on 2025-10-05.*
+
+When porting services or components between a Vite-based project and a Next.js project, a critical point of adaptation is the handling of environment variables on the client side.
+
+-   **Vite:** Exposes client-side variables prefixed with `VITE_` through the `import.meta.env` object (e.g., `import.meta.env.VITE_API_KEY`).
+-   **Next.js:** Exposes client-side variables prefixed with `NEXT_PUBLIC_` through the `process.env` object (e.g., `process.env.NEXT_PUBLIC_API_KEY`).
+
+Failure to adapt the access pattern will cause services to fail silently, as the variables will be `undefined`.
+
+**Resolution:** Any service or hook that consumes environment variables must be refactored to use the correct object and prefix for the target framework.
+
+*For more context, see session file: `05-10-2025-0001-component-port-setup.md`*

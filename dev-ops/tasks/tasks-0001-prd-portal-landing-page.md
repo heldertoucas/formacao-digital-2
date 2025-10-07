@@ -32,7 +32,7 @@
     -   [x] 3.3 Use a `Grid` or `SimpleGrid` to lay out the three testimonials, rendering each one inside the reusable `Card` component.
     -   [x] 3.4 Build the "Contact" section with the `<section id="contact">` tag.
     -   [x] 3.5 Display the contact details (Email, Phone, Address) and add placeholder icons for the social media links using Mantine `Group`, `Text`, and `ActionIcon` components.
--   [ ] 4.0 Implement Page Interactivity and Routing
+-   [x] 4.0 Implement Page Interactivity and Routing
     -   [x] 4.1 Use the `useWindowScroll` hook from `@mantine/hooks` to implement smooth-scrolling functionality for the "About" and "Contact" links in the `SiteHeader`.
     -   [x] 4.2 Thoroughly test all links on the page to ensure they navigate to the correct routes or scroll to the correct sections.
     -   [x] 4.3 Create the `src/app/not-found.tsx` file and build a simple, professionally styled 404 page.
